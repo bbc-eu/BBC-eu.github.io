@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BBC EU NEWS - Your premium source for European and global news.">
+    <title>BBC EU NEWS | Breaking News, Latest News and Videos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Prevent dark mode flash
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+</head>
+<body>
+    <div id="scroll-progress"></div>
+    
+    <header class="site-header">
+        <div class="top-bar">
+            <div class="container flex-between">
+                <div class="date-display" id="current-date"></div>
+                <div class="top-links">
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <button id="theme-toggle" aria-label="Toggle Dark Mode">🌓</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-header container flex-between">
+            <a href="index.html" class="logo">BBC EU NEWS</a>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search news...">
+                <button id="search-btn">🔍</button>
+            </div>
+        </div>
+        <nav class="main-nav" id="sticky-nav">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#" data-category="politics">Politics</a></li>
+                    <li><a href="#" data-category="business">Business</a></li>
+                    <li><a href="#" data-category="technology">Technology</a></li>
+                    <li><a href="#" data-category="science">Science</a></li>
+                    <li><a href="#" data-category="health">Health</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="news-ticker">
+        <div class="container flex-start">
+            <span class="ticker-label">BREAKING</span>
+            <div class="ticker-content">
+                <marquee behavior="scroll" direction="left" id="ticker-text">Loading latest headlines...</marquee>
+            </div>
+        </div>
+    </div>
+
+    <main class="container main-layout">
+        <div class="content-area">
+            <section class="featured-section" id="featured-article">
+                <!-- Injected via JS -->
+                <div class="loader"></div>
+            </section>
+
+            <div class="section-title">
+                <h2>Latest News</h2>
+            </div>
+            <section class="latest-grid" id="latest-news">
+                <!-- Injected via JS -->
+            </section>
+            
+            <div class="pagination">
+                <button id="load-more">Load More</button>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Trending Now</h3>
+                <ul class="trending-list" id="trending-posts">
+                    <!-- Injected via JS -->
+                </ul>
+            </div>
+            <div class="widget">
+                <h3>Popular Categories</h3>
+                <div class="category-tags">
+                    <a href="#">Europe</a>
+                    <a href="#">Climate</a>
+                    <a href="#">Economy</a>
+                    <a href="#">AI</a>
+                    <a href="#">Elections</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h2 class="footer-logo">BBC EU NEWS</h2>
+                <p>Delivering premium, accurate, and original journalism from across Europe and the globe.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="404.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#">FB</a>
+                    <a href="#">X</a>
+                    <a href="#">IG</a>
+                    <a href="#">IN</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; <span id="year"></span> BBC EU NEWS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>

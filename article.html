@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC EU NEWS | Article</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+</head>
+<body>
+    <div id="scroll-progress"></div>
+    
+    <header class="site-header">
+        <div class="main-header container flex-between">
+            <a href="index.html" class="logo">BBC EU NEWS</a>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">🌓</button>
+        </div>
+    </header>
+
+    <main class="container article-layout">
+        <article class="single-article" id="article-content">
+            <div class="loader"></div>
+            <!-- Injected via JS -->
+        </article>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Related Articles</h3>
+                <ul class="trending-list" id="related-posts">
+                    <!-- Injected via JS -->
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-bottom text-center container">
+            <p>&copy; 2024 BBC EU NEWS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Article specific initializations
+        document.addEventListener('DOMContentLoaded', () => {
+            app.loadArticle();
+        });
+    </script>
+</body>
+</html>

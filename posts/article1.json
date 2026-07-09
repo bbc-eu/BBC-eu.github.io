@@ -1,0 +1,24 @@
+{
+    "id": "article1",
+    "title": "European Union Announces New AI Regulation Framework",
+    "subtitle": "Landmark legislation sets global precedent for regulating Artificial Intelligence safely.",
+    "description": "The EU passes landmark legislation defining the future of Artificial Intelligence usage.",
+    "fullArticle": "<p>In a historic move, the European Parliament has approved the <strong>AI Act</strong>, a comprehensive set of rules aimed at governing artificial intelligence systems based on their risk to society. This legislation makes the EU the first major global player to formalize AI regulations.</p><h2>Understanding the Risk Tiers</h2><p>The framework divides AI systems into four tiers: Unacceptable risk, High risk, Limited risk, and Minimal risk. Systems deemed an 'unacceptable risk', such as social scoring systems, will be outright banned.</p><p>Tech industry leaders have expressed mixed reactions, balancing the need for safety with concerns over stifling innovation in the European tech sector.</p>",
+    "publishDate": "May 20, 2024",
+    "updatedDate": "May 21, 2024",
+    "author": "Elena Rossi",
+    "readingTime": "4 Min Read",
+    "category": "Technology",
+    "tags": ["AI", "EU", "Law", "Tech"],
+    "featuredImage": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
+    "imageCaption": "Abstract representation of Artificial Intelligence inside a digital framework.",
+    "galleryImages": [
+        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80"
+    ],
+    "video": "",
+    "youtubeEmbed": "",
+    "thumbnail": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=600&q=80",
+    "seoTitle": "EU AI Regulation Framework Passed",
+    "seoDescription": "Full details on the European Union's new Artificial Intelligence Act and what it means for global tech."
+}

@@ -1,0 +1,29 @@
+[
+    {
+        "id": "article1",
+        "title": "European Union Announces New AI Regulation Framework",
+        "description": "The EU passes landmark legislation defining the future of Artificial Intelligence usage across member states.",
+        "category": "Technology",
+        "author": "Elena Rossi",
+        "publishDate": "2024-05-20",
+        "thumbnail": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": "article2",
+        "title": "Markets Rally as Inflation Shows Signs of Cooling",
+        "description": "Global markets respond positively to the latest economic reports.",
+        "category": "Business",
+        "author": "James Thompson",
+        "publishDate": "2024-05-19",
+        "thumbnail": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": "article3",
+        "title": "خوشحال عورت کی پہچان یہی ہے نیا پاکستان۔",
+        "description": "خواتین کے حقوق کے تحفظ کے لیے حکومت پاکستان ہمیشہ سے متحرک رہی ہے۔ آج خواتین کے عالمی دن کے موقع پر خواتین کے وراثتی جائیداد سے متعلق قانون کا نفاذ حکومت پاکستان کی طرف سے خواتین کے حقوق کے لیے ایک بہترین اقدام ہے۔",
+        "category": "Pakistan",
+        "author": "Noel Noa",
+        "publishDate": "2021-01-02",
+        "thumbnail": "images/thumbnail_article3.jpg"
+    }
+]
